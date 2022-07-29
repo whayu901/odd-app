@@ -9,6 +9,7 @@ const Image = {
   whishlist: require("./Wishlist.png"),
   unWhishlist: require("./UnWishlist.png"),
   price: require("./price.png"),
+  backGround: require("./bg.png"),
 };
 
 export default Image;

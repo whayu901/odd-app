@@ -14,10 +14,11 @@ const CardProduct = () => {
       style={{
         borderRadius: 6,
         backgroundColor: COLORS.grey.main,
-        width: "70%",
+        width: "65%",
       }}>
       <Card.Cover
         source={{ uri: "https://picsum.photos/700" }}
+        resizeMode="contain"
         style={{ borderBottomEndRadius: 12, borderBottomStartRadius: 12 }}
       />
 
@@ -35,7 +36,7 @@ const CardProduct = () => {
         }}>
         <Text style={{ ...TYPHOGRAPHY.SmallParagraph }}>Hello world</Text>
       </View>
-      <View style={{ position: "absolute", top: 10, right: 10 }}>
+      <View style={{ position: "absolute", top: 5, right: 10 }}>
         <Image
           source={MyIcon.unWhishlist}
           resizeMode="contain"
@@ -84,7 +85,7 @@ const CardProduct = () => {
           </View>
 
           <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <IconFeather name="info" size={15} />
+            <IconFeather name="info" size={15} color={COLORS.black.main} />
             <Text style={{ ...TYPHOGRAPHY.SmallParagraph, marginLeft: 5 }}>
               Cream - Blush
             </Text>
@@ -94,10 +95,11 @@ const CardProduct = () => {
             style={{
               marginTop: 15,
               flexDirection: "row",
-              alignItems: "flex-end",
-              justifyContent: "space-between",
             }}>
-            <Button mode="outlined" uppercase={false}>
+            <Button
+              mode="outlined"
+              uppercase={false}
+              style={{ marginRight: 10 }}>
               <Text style={{ color: COLORS.black.main2 }}>View Brand</Text>
             </Button>
             <Button
